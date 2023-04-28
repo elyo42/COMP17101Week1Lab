@@ -17,7 +17,7 @@ df2 = df1.dropna()
 
 # Task 4
 New1= df2.loc[:,'WC/TA'] + df2.loc[:,'RE/TA']
-New2= df2.loc[:,'EBIT/TA'] + df2.loc[:,'S/TA']
+New2= df2.loc[:,'EBIT/TA'] * df2.loc[:,'S/TA']
 
 # Task 5
 df3=pd.concat([df2,New1,New2],axis=1)
